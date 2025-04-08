@@ -10,15 +10,33 @@
 }
 
 .recipe-list {
+    align-items: center;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0;
+    gap: 8px;
+}
+
+li {
+    padding: 8px;
     background-color: #add8e6;
-    padding: 20px;
-    margin: 20px auto;
-    display: block;
-    width: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
-    list-style-position: inside;
-    min-width: 200px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li:hover {
+    background-color: black;
+}
+
+li:hover a {
+    color: white;
 }
 
 a {
@@ -26,10 +44,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: white;
-    background-color: black;
-    padding: 0 10px;
-}
+
 
 
